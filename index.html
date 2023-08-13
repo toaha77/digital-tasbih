@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tasbih</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body>
+    <section class="">
+        <div class="font-extrabold text-6xl justify-center text-center mt-10">
+            <h1 class="text-blue-400">Digital <span class="text-lime-300">Tasbih</span></h1>
+        </div>
+    </section>
+    <section class="container mx-auto gap-4 mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div class="card bg-neutral text-neutral-content">
+        <div class="card-body items-center text-center">
+          <h2 class="text-3xl">Subha'nallah</h2>
+          <p id="sDisplay" class="text-3xl">0</p>
+          <div class="card-actions justify-end">
+            <button id="sBtnIncrement" class="btn btn-primary">Increment</button>
+            <button id="sBtnDecrement" class="btn">Decrement</button>
+          </div>
+        </div>
+      </div>
+    <div class="card bg-neutral text-neutral-content">
+        <div class="card-body items-center text-center">
+            <h2 class="text-3xl">Alhamdulillah</h2>
+          <p id="alhamduDisplay" class="text-3xl">0</p>
+          <div class="card-actions justify-end">
+            <button id="alhamduBtnIncrement" class="btn btn-primary">Increment</button>
+            <button id="alhamduBtnDecrement" class="btn">Decrement</button>
+          </div>
+        </div>
+      </div>
+    <div class="card bg-neutral text-white">
+        <div class="card-body items-center text-center">
+          <h2 class="text-3xl">Allahu-akbar</h2>
+          <p id="aDisplay" class="text-3xl">0</p>
+          <div class="card-actions justify-end">
+            <button id="aBtnIncrement" class="btn btn-primary">Increment</button>
+            <button id="aBtnDecrement" class="btn">Decrement</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="justify-center text-center mt-10">
+        <button id="resetBtn" class="btn btn-warning">RESET ALL TASBIH </button>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
